@@ -1,0 +1,10 @@
+*.sdf
+*.opensdf
+.project
+.cproject
+x64/
+*.o
+Debug/
+build/
+*.exe
+*.msi
