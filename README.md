@@ -1,5 +1,4 @@
-# softIkSolver
-Maya Soft IK Solver
+## Maya Soft IK Solver
 
 Our maya IK solver is an advanced solution for 2 bones setup. It fixes the annoying “pop” problem at full extension in the normal IK system. Moreover it implements a full controllable stretch algorithm and a “elbow slide” and “elbow lock” system needed by modern rigs. The advantage of our solver is that no extra nodes are needed and for this reason is faster than current solutions. It’s possible to update old rigs without creating new nodes or modifying the setup, just load our plugin and choose the tcSoftIKSolver from the ikHandle.
 
@@ -13,7 +12,7 @@ Features:
 If you are planning to use one of our tools in a studio, we would be grateful if you could let us know.
 
 
-How to use:
+## How to use:
 
 Load the tcSoftIkSolver plug-in from the Maya plug-ins window. The plug-in will automatically add a tcSoftIkSolver node in the following cases: when a scene is opened, when a scene is created, when the plugin is loaded.
 
@@ -35,8 +34,18 @@ Once the tcSoftIkSolver will be selected as “IK Solver” for an ikHandle, som
 * Mid/End joint parent inverse scale: mid/end joint parent scale in rest position
 
 
-Known limitations:
+## Known limitations:
 
 * The Soft Ik solver works only with chains of 2 bones.
 * When using Viewport 2.0, the drawing of the joints may be incorrect. The legacy viewport doesn’t have this issue and it will always draw the joints correctly.
 * Due to a bug in the maya undo system when some constraint are attached directly or indirectly to the joints or to the ikHandle, sometimes maya doesn’t refresh the correct position when and undo is executed. We reported this bug to autodesk we’ll let you know when they will fix it.
+
+## License
+
+This project is licensed under [the LPGP license](http://www.gnu.org/licenses/).
+
+## Contact us
+
+Please feel free to contact us at support@toolchefs.com in case you would like contribute or simply have questions.
+
+### ENJOY!
